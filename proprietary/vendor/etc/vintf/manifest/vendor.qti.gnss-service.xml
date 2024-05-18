@@ -5,7 +5,7 @@ Confidential and Proprietary - Qualcomm Technologies, Inc.
 <manifest version="1.0" type="device">
     <hal format="aidl">
         <name>vendor.qti.gnss</name>
-        <version>3</version>
+        <version>5</version>
         <fqname>ILocAidlGnss/default</fqname>
     </hal>
 </manifest>
