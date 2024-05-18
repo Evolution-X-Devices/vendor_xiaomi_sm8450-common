@@ -136,8 +136,8 @@ function configure_memory_parameters() {
 	else
 		echo 100 > /proc/sys/vm/swappiness
 	fi
-
-	if [ "$ProductName" == "yudi" ]; then
+	
+	if [ "$ProductName" == "ingres" ]; then
 		echo 10 > /proc/sys/vm/watermark_scale_factor
 	else
 		echo 1 > /proc/sys/vm/watermark_scale_factor
@@ -201,4 +201,8 @@ ProductName=`getprop ro.product.name`
 if [ "$ProductName" == "liuqin" ] || [ "$ProductName" == "yudi" ]; then
 	sleep 600
 	echo 100 > /proc/sys/vm/swappiness
+fi
+
+if [ "$ProductName" == "zeus" ]; then
+	echo 180 > /proc/sys/vm/swappiness
 fi
