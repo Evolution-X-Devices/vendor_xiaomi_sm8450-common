@@ -136,13 +136,7 @@ function configure_memory_parameters() {
 	else
 		echo 100 > /proc/sys/vm/swappiness
 	fi
-	
-	if [ "$ProductName" == "ingres" ]; then
-		echo 10 > /proc/sys/vm/watermark_scale_factor
-	else
-		echo 1 > /proc/sys/vm/watermark_scale_factor
-	fi
-    
+    echo 1 > /proc/sys/vm/watermark_scale_factor
     echo 0 > /proc/sys/vm/watermark_boost_factor
 
 	# Disable periodic kcompactd wakeups. We do not use THP, so having many
@@ -201,8 +195,4 @@ ProductName=`getprop ro.product.name`
 if [ "$ProductName" == "liuqin" ] || [ "$ProductName" == "yudi" ]; then
 	sleep 600
 	echo 100 > /proc/sys/vm/swappiness
-fi
-
-if [ "$ProductName" == "zeus" ]; then
-	echo 180 > /proc/sys/vm/swappiness
 fi
