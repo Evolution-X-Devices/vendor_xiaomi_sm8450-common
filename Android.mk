@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter cupid marble mayfly mondrian thor unicorn zeus ziyi zizhan,$(TARGET_DEVICE)),)
+ifneq ($(filter cupid dagda marble mayfly mondrian taranis thor unicorn zeus ziyi zizhan,$(TARGET_DEVICE)),)
 
 endif
