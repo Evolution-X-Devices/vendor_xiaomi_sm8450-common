@@ -1584,3 +1584,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.vpp@2.0-service \
     vendor.xiaomi.sensor.communicate@1.0_manifest
+
+PRODUCT_PACKAGES += \
+    libimscamera_jni_libimscamera_jni_symlink64 \
+    libimsmedia_jni_libimsmedia_jni_symlink64 \
+    libwfdnative_libwfdnative_symlink64
