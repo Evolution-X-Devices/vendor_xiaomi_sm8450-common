@@ -396,7 +396,7 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgame_enhance \
     libgnsspps \
-    libgrpc++_unsecure \
+    libgrpc++_unsecure_prebuilt \
     libhdr_backlight_adapter \
     libhdr_tm \
     libhdrdynamic \
