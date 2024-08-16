@@ -867,7 +867,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so"],
-			shared_libs: ["libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "vendor.qti.hardware.qccvndhal@1.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbase", "libcutils", "libfmq", "libhidlbase", "liblog", "libutils", "vendor.qti.hardware.qccvndhal@1.0-vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -3887,11 +3887,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libqcc_file_agent.so"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libbase", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.0", "vendor.qti.hardware.qccsyshal@1.1", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "liblog", "libutils", "libbase", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.0-vendor", "vendor.qti.hardware.qccsyshal@1.1-vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -7719,11 +7718,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so"],
-			shared_libs: ["vendor.qti.hardware.qccsyshal@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["vendor.qti.hardware.qccsyshal@1.0-vendor", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -7737,7 +7735,7 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so"],
-			shared_libs: ["libhidlbase", "libutils", "libfmq", "libcutils", "liblog", "vendor.qti.hardware.qccvndhal@1.0", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libhidlbase", "libutils", "libfmq", "libcutils", "liblog", "vendor.qti.hardware.qccvndhal@1.0-vendor", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -11484,11 +11482,10 @@ cc_prebuilt_binary {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/qcc-trd"],
-			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libgrpc++_unsecure", "libqcc_file_agent", "libqmi_cci", "libqmiservices", "libidl", "libnl", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.1", "libz", "libbinder", "libbase", "vendor.qti.hardware.qccvndhal@1.0", "vendor.qti.hardware.qccvndhal@1.0-halimpl", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libcutils", "liblog", "libutils", "libprotobuf-cpp-full-3.9.1-vendorcompat", "libgrpc++_unsecure", "libqcc_file_agent", "libqmi_cci", "libqmiservices", "libidl", "libnl", "libfmq", "libhidlbase", "vendor.qti.hardware.qccsyshal@1.1-vendor", "libz", "libbinder", "libbase", "vendor.qti.hardware.qccvndhal@1.0-vendor", "vendor.qti.hardware.qccvndhal@1.0-halimpl", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	strip: {
 		none: true,
 	},
