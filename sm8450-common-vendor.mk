@@ -97,8 +97,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/android.hardware.security.keymint-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.security.keymint-service-qti \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/qconfigservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qconfigservice \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/qcrilNrd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrilNrd \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/qvrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qvrservice \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/sxrservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/sxrservice \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
@@ -154,9 +152,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qtigetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtigetprop \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qtisetprop:$(TARGET_COPY_OUT_VENDOR)/bin/qtisetprop \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qvrdatalogger:$(TARGET_COPY_OUT_VENDOR)/bin/qvrdatalogger \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qvrservicetest:$(TARGET_COPY_OUT_VENDOR)/bin/qvrservicetest \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/bin/qvrservicetest64:$(TARGET_COPY_OUT_VENDOR)/bin/qvrservicetest64 \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/sensors-qesdk:$(TARGET_COPY_OUT_VENDOR)/bin/sensors-qesdk \
     vendor/xiaomi/sm8450-common/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
@@ -270,9 +265,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/qvrd_vndr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qvrd_vndr.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/sxrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/sxrd.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/trusteduilistener.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trusteduilistener.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
@@ -384,33 +377,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qguard.json:$(TARGET_COPY_OUT_VENDOR)/etc/qguard.json \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/339/0/65536/mtp855.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/415/0/131072/mtplahaina.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/131072/mtplahaina.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/131072/mtplahaina_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/65536/mtplahaina.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65536/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65536/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/0/65537/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/0/65537/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65536/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65536/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio_6dof_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio_6dof_config.xml \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/cfg/457/3/65537/mtpwaipio_qvr_3dof_tracker_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/cfg/457/3/65537/mtpwaipio_qvr_3dof_tracker_config.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/qvr_usb_device_list.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvr_usb_device_list.txt \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_VENDOR)/etc/qvr/qvrservice_config.txt \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/c2audio.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/c2audio.vendor.base-arm.policy \
@@ -426,9 +392,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qesdk.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qvr@2.0.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/sensors-qesdk.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sensors-qesdk.policy \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/sxr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/sxr@2.0.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
@@ -515,7 +479,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libDspIOProxy_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDspIOProxy_stub.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libEvrcSwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEvrcSwCodec.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libFace3DTA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3DTA.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libFace3D_hlos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFace3D_hlos.so \
@@ -525,7 +488,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libMapService.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMapService.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libQ6MSFR_manager_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQ6MSFR_manager_stub.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
@@ -533,8 +495,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libQcelp13SwCodec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQcelp13SwCodec.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libQtiRilLoadable.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQtiRilLoadable.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libScenescape.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libScenescape.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libStereoRectifyWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStereoRectifyWrapper.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libTouchInputVM.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTouchInputVM.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libTrustedInput.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInput.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libTrustedInputTZ.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTrustedInputTZ.so \
@@ -586,7 +546,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libeva.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libeva_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeva_util.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libeye_tracking_dsp_sample_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeye_tracking_dsp_sample_stub.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libface3d_dev.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libface3d_dev.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcrc.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
@@ -596,7 +555,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libgrpc++_unsecure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgrpc++_unsecure.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libhalide_hexagon_host.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhalide_hexagon_host.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libhdr_backlight_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_backlight_adapter.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libhdrdynamic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrdynamic.so \
@@ -747,13 +705,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqtiidentitycredential.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtiidentitycredential.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqtikeymint.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymint.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cam_cdsp_driver_stub.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_cdsp_driver_stub.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_eyetracking_plugin.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvr_hostcontroller_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvr_hostcontroller_plugin.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrcamera_client.qti.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqvrservice_client.qti.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/librcmask.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcmask.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libril-db.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-db.so \
@@ -796,8 +747,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsxrcryptoimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxrcryptoimpl.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsxrservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsxrservice.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsynergy_loc_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsynergy_loc_api.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsys_info_cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsys_info_cache.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
@@ -805,7 +754,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libtracker_6dof_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtracker_6dof_impl.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libultrasound_notify.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libultrasound_notify.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libvideotxr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideotxr.so \
@@ -928,7 +876,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.qconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qconfig@1.0.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
     vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims-V7-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims-V7-ndk_platform.so \
@@ -1063,7 +1010,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-service \
     vendor.qti.hardware.perf \
     vendor.qti.hardware.qconfig@1.0-service \
-    vendor.qti.hardware.qxr-service \
     vendor.qti.hardware.radio.ims \
     vendor.qti.hardware.servicetracker@1.2-service \
     vendor.qti.hardware.vpp@2.0-service
