@@ -282,7 +282,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qspmhal@1.0 \
     android.hardware.secure_element@1.0-impl \
     btaudio_offload_if \
-    com.qualcomm.qti.dpm.api@1.0 \
+    com.qualcomm.qti.dpm.api@1.0-vendor \
     com.qualcomm.qti.imscmservice@1.0 \
     com.qualcomm.qti.imscmservice@2.0 \
     com.qualcomm.qti.imscmservice@2.1 \
@@ -791,7 +791,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.1 \
     vendor.qti.qesdsys-V1-ndk_platform \
     vendor.qti.qspmhal@1.0-impl \
-    com.qualcomm.qti.dpm.api@1.0-se \
+    com.qualcomm.qti.dpm.api@1.0 \
     lib-imsvideocodec \
     lib-imsvt \
     lib-imsvtextutils \
