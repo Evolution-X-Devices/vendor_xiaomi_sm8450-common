@@ -5158,23 +5158,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libqtiidentitycredential",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libqtiidentitycredential.so"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libqcbor", "libhardware", "libkeymasterdeviceutils", "libkeymasterutils", "libhidlbase", "libcrypto", "libQSEEComAPI", "libbinder_ndk", "android.hardware.identity-V3-ndk_platform", "android.hardware.keymaster-V3-ndk_platform", "libkeymasterprovision", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libqtikeymaster4",
 	owner: "xiaomi",
 	strip: {
@@ -10783,15 +10766,6 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_lahaina_identity",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_lahaina_identity.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "manifest_vendor.xiaomi.hardware.mlipay",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
@@ -11119,24 +11093,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti"],
 			shared_libs: ["android.hardware.gatekeeper@1.0", "libhardware", "libhidlbase", "libutils", "liblog", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "android.hardware.identity-service-qti",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/android.hardware.identity-service-qti"],
-			shared_libs: ["liblog", "libcutils", "libbase", "libutils", "libhardware", "libqcbor", "libkeymasterdeviceutils", "libkeymasterutils", "libhidlbase", "libcrypto", "libQSEEComAPI", "libbinder_ndk", "libqtiidentitycredential", "android.hardware.identity-V3-ndk_platform", "android.hardware.keymaster-V3-ndk_platform", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
