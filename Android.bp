@@ -2467,23 +2467,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libembmsservice",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libembmsservice.so"],
-			shared_libs: ["liblog", "libqmi_cci", "libqmi", "libqmi_client_helper", "libqmiservices", "libidl", "libdsutils", "libtime_genoff", "libdiag", "libdsi_netctrl", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libeva",
 	owner: "xiaomi",
 	strip: {
@@ -7902,40 +7885,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.embmssl@1.0",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.0.so"],
-			shared_libs: ["libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "vendor.qti.hardware.embmssl@1.1",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/vendor.qti.hardware.embmssl@1.1.so"],
-			shared_libs: ["vendor.qti.hardware.embmssl@1.0", "libhidlbase", "liblog", "libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "vendor.qti.hardware.fm@1.0",
 	owner: "xiaomi",
 	strip: {
@@ -10988,23 +10937,6 @@ cc_prebuilt_binary {
 		android_arm64: {
 			srcs: ["proprietary/vendor/bin/edgnss-daemon"],
 			shared_libs: ["libutils", "liblog", "libssl", "libgps.utils", "libcdfw_remote_api", "libpal_net_if", "libsys_info_cache", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
-	name: "embmsslServer",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/embmsslServer"],
-			shared_libs: ["libembmsservice", "liblog", "libutils", "libhidlbase", "vendor.qti.hardware.embmssl@1.0", "vendor.qti.hardware.embmssl@1.1", "libqmiservices", "libqmi_cci", "libqmi_encdec", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
