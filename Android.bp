@@ -10770,23 +10770,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "modemManager",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/modemManager"],
-			shared_libs: ["libavservices_minijail", "libcutils", "libdiag", "liblog", "libhidlbase", "libbinder", "libjsoncpp", "libqesdk", "libqti_vndfwk_detect_vendor", "libutils", "vendor.qti.data.factory@2.3", "vendor.qti.hardware.data.lce@1.0", "vendor.qti.latency@2.0", "vendor.qti.latency@2.1", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "msm_irqbalance",
 	owner: "xiaomi",
 	target: {
