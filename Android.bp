@@ -11344,24 +11344,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor.qti.psiclient@1.0-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.psiclient@1.0-service"],
-			shared_libs: ["libcutils", "libutils", "liblog", "libbase", "libhardware", "libhidlbase", "libhidltransport", "libpsi", "libpasrutils", "vendor.qti.memory.pasrmanager@1.0", "vendor.qti.memory.pasrmanager@1.1", "android.hidl.allocator@1.0", "android.hidl.memory@1.0", "libhidlmemory", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.qti.secure_element@1.2-service",
 	owner: "xiaomi",
 	target: {
