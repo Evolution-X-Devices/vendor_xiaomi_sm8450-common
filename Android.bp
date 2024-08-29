@@ -11702,23 +11702,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "qguard",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/qguard"],
-			shared_libs: ["libbase", "libcutils", "liblog", "libjsoncpp", "libprocessgroup", "libutils", "libbinder", "libbinder_ndk", "libui", "libhidlbase", "libdisplayconfig.qti", "android.hardware.graphics.allocator@4.0", "android.hardware.graphics.mapper@4.0", "android.hardware.graphics.common@1.2", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "qmipriod",
 	owner: "xiaomi",
 	target: {
