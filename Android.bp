@@ -5793,11 +5793,10 @@ cc_prebuilt_library_shared {
 	target: {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libwfdmmsrc_proprietary.so"],
-			shared_libs: ["libbinder", "libmmosal_vendor", "liblog", "libutils", "libmmrtpencoder_vendor", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "qti.video.utils.videobufferlayout", "android.hardware.graphics.mapper@2.0", "android.hardware.audio@7.0", "android.hardware.audio.common@7.0", "android.hardware.audio.common@7.0-enums", "libfmq", "libc++", "libc", "libm", "libdl", ],
+			shared_libs: ["libbinder", "libmmosal_vendor", "liblog", "libutils", "libmmrtpencoder_vendor", "libFileMux_proprietary", "libcutils", "libtinyalsa", "libwfdcommonutils_proprietary", "libwfdutils_proprietary", "libwfdconfigutils_proprietary", "libwfdaac_vendor", "libpng", "libwfdmminterface_proprietary", "libwfdcodecv4l2_proprietary", "libwfdmmservice_proprietary", "libhidlbase", "qti.video.utils.videobufferlayout", "android.hardware.graphics.mapper@2.0", "android.hardware.audio@7.0", "android.hardware.audio.common@7.0", "android.hardware.audio.common@7.0-enums", "libfmq", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
-	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
