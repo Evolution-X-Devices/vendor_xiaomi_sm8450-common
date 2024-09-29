@@ -9920,7 +9920,7 @@ dex_import {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.security.keymint-service-qti",
+	name: "android.hardware.security.keymint-service-qti.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml",
 	filename_from_src: true,
@@ -9929,7 +9929,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
+	name: "c2_manifest_vendor.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
 	filename_from_src: true,
@@ -9938,7 +9938,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "c2_manifest_vendor_audio",
+	name: "c2_manifest_vendor_audio.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml",
 	filename_from_src: true,
@@ -9947,7 +9947,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "dataconnection-saidl",
+	name: "dataconnection-saidl.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/dataconnection-saidl.xml",
 	filename_from_src: true,
@@ -9956,7 +9956,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.4-service.widevine",
+	name: "manifest_android.hardware.drm@1.4-service.widevine.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml",
 	filename_from_src: true,
@@ -9965,7 +9965,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "manifest_vendor.xiaomi.hardware.mlipay",
+	name: "manifest_vendor.xiaomi.hardware.mlipay.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
 	filename_from_src: true,
@@ -9974,7 +9974,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "qtiradio-saidl",
+	name: "qtiradio-saidl.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/qtiradio-saidl.xml",
 	filename_from_src: true,
@@ -9983,7 +9983,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.diag.hal.service",
+	name: "vendor.qti.diag.hal.service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
 	filename_from_src: true,
@@ -9992,7 +9992,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.gnss-service",
+	name: "vendor.qti.gnss-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml",
 	filename_from_src: true,
@@ -10001,7 +10001,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.perf",
+	name: "vendor.qti.hardware.perf.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml",
 	filename_from_src: true,
@@ -10010,7 +10010,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.qconfig@1.0-service",
+	name: "vendor.qti.hardware.qconfig@1.0-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml",
 	filename_from_src: true,
@@ -10019,7 +10019,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.radio.ims",
+	name: "vendor.qti.hardware.radio.ims.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.radio.ims.xml",
 	filename_from_src: true,
@@ -10028,7 +10028,7 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vpp@2.0-service",
+	name: "vendor.qti.hardware.vpp@2.0-service.xml",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml",
 	filename_from_src: true,

@@ -828,19 +828,19 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
-    android.hardware.security.keymint-service-qti \
-    c2_manifest_vendor \
-    c2_manifest_vendor_audio \
-    dataconnection-saidl \
-    manifest_android.hardware.drm@1.4-service.widevine \
-    manifest_vendor.xiaomi.hardware.mlipay \
-    qtiradio-saidl \
-    vendor.qti.diag.hal.service \
-    vendor.qti.gnss-service \
-    vendor.qti.hardware.perf \
-    vendor.qti.hardware.qconfig@1.0-service \
-    vendor.qti.hardware.radio.ims \
-    vendor.qti.hardware.vpp@2.0-service \
+    android.hardware.security.keymint-service-qti.xml \
+    c2_manifest_vendor.xml \
+    c2_manifest_vendor_audio.xml \
+    dataconnection-saidl.xml \
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_vendor.xiaomi.hardware.mlipay.xml \
+    qtiradio-saidl.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.perf.xml \
+    vendor.qti.hardware.qconfig@1.0-service.xml \
+    vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.vpp@2.0-service.xml \
     ATFWD-daemon \
     SoterProvisioningTool \
     adpl \
