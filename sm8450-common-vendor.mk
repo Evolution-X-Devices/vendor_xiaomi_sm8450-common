@@ -201,6 +201,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/xiaomi_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list.xml \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/xiaomi_ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list_preference.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
