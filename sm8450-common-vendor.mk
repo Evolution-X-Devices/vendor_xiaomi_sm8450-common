@@ -207,15 +207,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
     vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libeai_fixed.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_fixed.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/libeai_float.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeai_float.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/liblistensoundmodel2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2vendor.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
-    vendor/xiaomi/sm8450-common/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so
+    vendor/xiaomi/sm8450-common/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin
 
 PRODUCT_PACKAGES += \
     eglSubDriverAndroid \
@@ -346,6 +338,8 @@ PRODUCT_PACKAGES += \
     libdsd2pcm \
     libdsi_netctrl \
     libdsutils \
+    libeai_fixed \
+    libeai_float \
     libeva \
     libeva_util \
     libface3d_dev \
@@ -366,6 +360,7 @@ PRODUCT_PACKAGES += \
     libkeymasterprovision \
     libkeymasterutils \
     liblbs_core \
+    liblistensoundmodel2vendor \
     libloc_api_v02 \
     libloc_api_wds \
     libloc_base_util \
@@ -589,6 +584,9 @@ PRODUCT_PACKAGES += \
     sensors.ultrasoundproximity \
     libasphere \
     libmisoundfx \
+    libqcbassboost \
+    libqcreverb \
+    libqcvirt \
     libshoebox \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
@@ -619,6 +617,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.gnss-V5-ndk \
     vendor.qti.gnss-service \
     vendor.qti.hardware.AGMIPC@1.0-impl \
+    vendor.qti.hardware.ListenSoundModel@1.0-impl \
+    vendor.qti.hardware.ListenSoundModel@1.0 \
     vendor.qti.hardware.alarm@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.0 \
     vendor.qti.hardware.bluetooth_sar@1.1 \
