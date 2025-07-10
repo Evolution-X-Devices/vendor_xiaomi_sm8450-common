@@ -857,6 +857,47 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libC2D2",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libC2D2.so",
+            ],
+            shared_libs: [
+                "libgsl",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libC2D2.so",
+            ],
+            shared_libs: [
+                "libgsl",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libCB",
     owner: "xiaomi",
     strip: {
@@ -1038,6 +1079,47 @@ cc_prebuilt_library_shared {
             ],
             shared_libs: [
                 "libgsl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libc2d30_bltlib",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libc2d30_bltlib.so",
+            ],
+            shared_libs: [
+                "libgsl",
+                "libcutils",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libc2d30_bltlib.so",
+            ],
+            shared_libs: [
+                "libgsl",
+                "libcutils",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
@@ -9786,6 +9868,33 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libsoc_helper_jni",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libsoc_helper_jni.so",
+            ],
+            shared_libs: [
+                "libsoc_helper",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libspcom",
     owner: "xiaomi",
     strip: {
@@ -17568,6 +17677,17 @@ android_app_import {
     name: "TimeService",
     owner: "xiaomi",
     apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    soc_specific: true,
+}
+
+android_app_import {
+    name: "TrustZoneAccessService",
+    owner: "xiaomi",
+    apk: "proprietary/vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk",
     certificate: "platform",
     dex_preopt: {
         enabled: false,
