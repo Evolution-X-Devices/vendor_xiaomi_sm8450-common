@@ -297,10 +297,13 @@ PRODUCT_PACKAGES += \
     lib-rtpcommon \
     lib-rtpcore \
     lib-rtpsl \
+    libAlacSwDec \
+    libApeSwDec \
     libEvrcSwCodec \
     libFace3DTA \
     libFace3D_hlos \
     libFileMux_proprietary \
+    libFlacSwDec \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
     libGPreqcancel \
