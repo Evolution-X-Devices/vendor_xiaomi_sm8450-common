@@ -43,6 +43,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio/sku_ukee/resourcemanager_waipio_mtp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_ukee/resourcemanager_waipio_mtp.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_cloud_control_white_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_cloud_control_white_list.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/audio_diag.cfg \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/backend_conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/backend_conf.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/card-defs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/card-defs.xml \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
@@ -133,6 +137,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
+    vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.qti.audio-adsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.audio-adsprpc-service.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
     vendor/xiaomi/sm8450-common/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
@@ -322,11 +327,19 @@ PRODUCT_PACKAGES += \
     libQTEEConnector_vendor \
     libQcelp13SwCodec \
     libQtiRilLoadable \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
+    lib_bt_lhdc \
     lib_misound_asc \
     libadm \
     libadsp_default_listener \
     libadsprpc \
     libagm \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
     libagmmixer \
     libar-acdb \
     libar-gpr \
@@ -338,6 +351,7 @@ PRODUCT_PACKAGES += \
     libaudioroute_ext \
     libawcal \
     libbacklight-calib \
+    libbatterylistener \
     libbluetooth_audio_session_qti \
     libbluetooth_audio_session_qti_2_1 \
     libbtnv \
@@ -379,6 +393,7 @@ PRODUCT_PACKAGES += \
     libfastcrc \
     libfastcvdsp_stub \
     libfastcvopt \
+    libfmpal \
     libgame_enhance \
     libgnsspps \
     libgrpc++_unsecure_prebuilt \
@@ -426,6 +441,7 @@ PRODUCT_PACKAGES += \
     libmlipay \
     libmlipay@1.1 \
     libmm-hdcpmgr \
+    libmmhardware \
     libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
@@ -540,6 +556,7 @@ PRODUCT_PACKAGES += \
     libsn100u_fw \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
+    libsndcardparser \
     libsns_device_mode_stub \
     libsns_direct_channel_stub \
     libsns_registry_skel \
@@ -614,9 +631,15 @@ PRODUCT_PACKAGES += \
     sensors.touch.detect \
     sensors.ultrasoundproximity \
     libasphere \
+    libmisoundfx \
     libqcbassboost \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
     libqcreverb \
     libqcvirt \
+    libshoebox \
+    libvolumelistener \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \
     vendor.display.color@1.2 \
@@ -860,6 +883,7 @@ PRODUCT_PACKAGES += \
     SoterProvisioningTool \
     adpl \
     adsprpcd \
+    audioadsprpcd \
     cdsprpcd \
     cnd \
     cnss-daemon \
