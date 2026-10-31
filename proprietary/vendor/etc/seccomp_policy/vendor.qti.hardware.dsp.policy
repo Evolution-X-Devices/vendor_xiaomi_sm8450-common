@@ -18,6 +18,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+gettimeofday: 1
 mmap: arg2 in ~PROT_EXEC || arg2 in ~PROT_WRITE
 munmap: 1
 #prctl: arg0 == PR_SET_VMA || arg0 == PR_GET_DUMPABLE || arg0 == 0x37
