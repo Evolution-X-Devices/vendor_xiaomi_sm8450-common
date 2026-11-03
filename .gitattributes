@@ -1,0 +1,1 @@
+proprietary/vendor/etc/faceunlock/resources.zip filter=lfs diff=lfs merge=lfs -text
