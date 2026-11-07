@@ -15,32 +15,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libbacklight-calib",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libbacklight-calib.so",
-            ],
-            shared_libs: [
-                "libdisplaydebug",
-                "libtinyxml2_1",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "vendor.qti.diaghal-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -124,6 +98,92 @@ cc_prebuilt_library_shared {
                 "libbluetooth_audio_session",
                 "libbluetooth_audio_session_qti",
                 "libbluetooth_audio_session_qti_2_1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "camx.device-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camx.device-impl.so",
+            ],
+            shared_libs: [
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.camera.metadata-V1-ndk",
+                "android.hardware.camera.provider-V1-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "libbinder_ndk",
+                "libcamera_metadata",
+                "libcutils",
+                "libexif",
+                "libfmq",
+                "libgralloctypes",
+                "libhardware",
+                "libhidlbase",
+                "liblog",
+                "libui",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "camx.provider-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/camx.provider-impl.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libfmq",
+                "liblog",
+                "libutils",
+                "android.hardware.camera.common@1.0",
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.camera.metadata-V1-ndk",
+                "android.hardware.camera.provider-V1-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "camx.device-impl",
+                "libtinyxml2",
+                "libcamera_metadata",
+                "libexif",
+                "libgralloctypes",
+                "libhardware",
+                "libhidlbase",
+                "libui",
                 "libc++",
                 "libc",
                 "libm",
@@ -2456,6 +2516,32 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libbacklight-calib",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libbacklight-calib.so",
+            ],
+            shared_libs: [
+                "libdisplaydebug",
+                "libtinyxml2_1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libbluetooth_audio_session_qti",
     owner: "xiaomi",
     strip: {
@@ -2570,6 +2656,57 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamximageformatutils",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamximageformatutils.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libqti_vndfwk_detect",
+                "libutils",
+                "libcdsprpc",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.1",
+                "libdmabufheap",
+                "libgralloccore",
+                "libgrallocutils",
+                "libmapperutils",
+                "libvndksupport",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common@1.1",
+                "libbinder_ndk",
+                "libdisplayconfig.qti",
+                "libgralloc.qti",
+                "libgralloctypes",
+                "vendor.qti.hardware.display.config-V2-ndk",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -8740,37 +8877,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libshsusr_verinfo",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libshsusr_verinfo.so",
-            ],
-            shared_libs: [
-                "libutils",
-                "libcutils",
-                "libqmiservices",
-                "libqmi_cci",
-                "libqmi_common_so",
-                "libqmi_client_qmux",
-                "libqmi_client_helper",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libsn100u_fw",
     owner: "xiaomi",
     strip: {
@@ -12048,6 +12154,67 @@ cc_prebuilt_library_shared {
         },
     },
     compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.qti.hardware.camera.postproc@1.0-service-impl",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhardware",
+                "libhidlbase",
+                "libhidltransport",
+                "libcamera_metadata",
+                "libqti_vndfwk_detect",
+                "libutils",
+                "libbase",
+                "libfmq",
+                "libbinder_ndk",
+                "libui",
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.common-V1-ndk",
+                "vendor.qti.hardware.camera.postproc-V1-ndk",
+                "camx.device-impl",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.1",
+                "libdmabufheap",
+                "libgralloccore",
+                "libgrallocutils",
+                "libmapperutils",
+                "libvndksupport",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common@1.1",
+                "libdisplayconfig.qti",
+                "libgralloc.qti",
+                "libgralloctypes",
+                "android.hardware.graphics.allocator@4.0",
+                "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    check_elf_files: false,
     prefer: true,
     soc_specific: true,
 }
@@ -17157,6 +17324,24 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "vendor.qti.camera.postproc-impl.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.camera.postproc-impl.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.qti.camera.provider.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.camera.provider.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "vendor.qti.diag.hal.service.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml",
@@ -17822,6 +18007,55 @@ cc_prebuilt_binary {
                 "libutils",
                 "libavservices_minijail",
                 "qcrild_libqcrilnr",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.qti.camera.provider-service_64",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.qti.camera.provider-service_64",
+            ],
+            shared_libs: [
+                "camx.provider-impl",
+                "libbase",
+                "libbinder",
+                "libbinder_ndk",
+                "libhardware",
+                "libfmq",
+                "android.hardware.camera.common@1.0",
+                "android.hardware.camera.common-V1-ndk",
+                "android.hardware.camera.device-V1-ndk",
+                "android.hardware.camera.metadata-V1-ndk",
+                "android.hardware.camera.provider-V1-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hidl.allocator@1.0",
+                "android.hidl.memory@1.0",
+                "camx.device-impl",
+                "libtinyxml2",
+                "libcamera_metadata",
+                "libcutils",
+                "libexif",
+                "libgralloctypes",
+                "libhidlbase",
+                "liblog",
+                "libui",
+                "libutils",
                 "libc++",
                 "libc",
                 "libm",
