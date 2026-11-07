@@ -67,11 +67,10 @@
   <Param59>8</Param59>
   <Param60>16.0</Param60>
   <Param61>0.64</Param61>
-  <Param62>180</Param62>
-  <Param63>18200000</Param63>
-  <Param64>13600000</Param64>
-  <Param65>18200000</Param65>
-  <Param66>13600000</Param66>
+  <Param70>18200000</Param70>
+  <Param71>13600000</Param71>
+  <Param72>18200000</Param72>
+  <Param73>13600000</Param73>
 
 <!-- Example
   <Overrides>
